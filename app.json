@@ -1,30 +1,37 @@
 {
   "expo": {
-    "name": "barcode-reader",
-    "slug": "barcode-reader",
+    "name": "YESS BOSS",
+    "slug": "yess-boss",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app_logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "plugins": [["react-native-nfc-manager"]],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/app_logo.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": ["android.permission.NFC"],
+      "package": "com.ruhullahsanwal.yessboss"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7f91b9aa-9199-482b-8a16-d6e8271ed6c4"
+      }
+    },
+    "owner": "ruhullahsanwal"
   }
 }
